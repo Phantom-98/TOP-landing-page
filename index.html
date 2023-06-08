@@ -9,55 +9,100 @@
 </head>
 <!-- header with logo and three links (horizontal; logo on left ; links on right)-->
 <body>
-    <div class="header"> Lumix BS1H Rig   
-        <div class="head-links">
-            link one link two link three
+    <div class="header">  
+      <img class="logo" src="images/Logo1.png" alt="Logo for phantom media" onclick="VaderAudio()">
+        
+      <div class="head-links">
+            <ul> 
+              <li><a href="#" onclick="HelloAudio()">All cameras</a></li>
+              <li><a href="#" onclick="HelloAudio()">Accessories</a></li>
+              <li><a href="#" onclick="NoAudio()">Exit page</a></li>
+            </ul>
+
         </div>
+        <script>
+          function VaderAudio() {
+            var audio = new Audio("audio/darth-vader.mp3");
+            audio.play();
+          }
+        </script>
+                <script>
+                  function HelloAudio() {
+                    var audio = new Audio("audio/hello-there-obi-wan.mp3");
+                    audio.play();
+                  }
+                </script>
+                        <script>
+                          function NoAudio() {
+                            var audio = new Audio("audio/nooo.mp3");
+                            audio.play();
+                          }
+                        </script>
     </div>
 <!--container top portion of site contains big text, small text, button, image to the right  -->
 
 <div class="container1">
- <div class="text1">
-    Lumix BS1H Rig Setup
- </div>
- <div class="text2"> 
-    Here is a video of ...
- </div>
- <div class="button">
-     Subscribe 
+
+ <div class="stacked">
+  <div class="text1">Lumix BS1H Rig Setup</div>
+  <div class="text2">Here you will find recommended accessories for the BS1H, links for other cameras and accessories can be found in the top right corner.</div>
+  <button class="buy" onclick="CollectionAudio()"> Buy </button>
  </div>
 
- <div class="embed vid or img">
-    <iframe width="564" height="336" src="https://www.youtube.com/embed/7is7lw02jKs" title="Introducing LUMIX BS1H | Full-Frame Box-Style Mirrorless Live &amp; Cinema Camera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <div class="embed-vid">
+    <iframe width="600" height="300" src="https://www.youtube.com/embed/7is7lw02jKs" title="Introducing LUMIX BS1H | Full-Frame Box-Style Mirrorless Live &amp; Cinema Camera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  </div>
+ <script>
+  function CollectionAudio() {
+    var audio = new Audio("audio/fine-addition-to-my-collection.mp3");
+    audio.play();
+  }
+</script>
 </div>
 
 <!--container will have big text center top ; 4 img ; under img small txt-->
 <div class="container2">
- <div class="Accessories"> Accessories for the Lumix BS1H 
-   
- </div>
+  <div class="con2stck">
 
- <div class="Accessories-imgs">
-  <img src=" " alt=" ">
-  <img src=" " alt=" ">
-  <img src=" " alt=" ">
- </div>
+   <div class="Accessories"> Accessories for the Lumix BS1H </div>
 
+   <div class="Accessories-imgs">
+
+  <div class="set">
+   <img src="images/BS1H.jpg" alt="image of the bs1h camera with lens and battery attatch">
+   <div class="text">To start we need an L-mount lens and a Panasonic VBR59 battery</div>
+  </div> 
+
+  <div class="set">
+   <img src="images/smallrigBS1H.jpg" alt=" ">
+   <div class="text">The cage is optional but is a great addition to start a rig for your needs</div>
+  </div>
+
+  <div class="set">
+   <img src="images/maxresdefault.jpg" alt=" ">
+   <div class="text">The DJI wireless microphone for audio</div>
+  </div>
+
+  <div class="set">
+   <img src="images/AtomosBS1H.jpg" alt=" ">
+   <div class="text">Since the Lumix BS1H doesnt have a screen it would be a good idea to get a display like the Atomos ninja V</div>
+  </div>
+
+   </div>
+  </div>
 </div>
 
 <!--insperational quote with light grey background (big rectangle)-->
 <div class="container3">
-    <div class="quote" onclick="playAudio()">
+  <div class="con3txt">
+    <div class="quote" onclick="YodaAudio()">
        Do or do not. There is no try
     </div>
-    <div class="author">
-       -Yoda
-    </div>
+    <div class="author"> -Yoda </div>
    </div> 
-   
+  </div> 
    <script>
-    function playAudio() {
+    function YodaAudio() {
       var audio = new Audio("audio/Do-or-do-not-there-is-no-try.mp3");
       audio.play();
     }
@@ -67,21 +112,23 @@
 
 <!--Final portion blue rectangle w/ txt, smller txt under ; button (txt left, button right) ; -->
 <div class="container4">
- <div class="bgtxt">
+  <div class="blue-box">
 
- </div>
- <div class="smlltxt">
+   <div class="bl2txt">
+    <div class="bgtxt"> Buy the Lumix BS1H and start creating content!</div>
+    <div class="smlltxt">Whether it's for YouTube or a film whatever you decide the lumix BS1H is versitile and capable of getting the job done.</div>
 
- </div>
- <div class="button">
+   </div>
 
- </div>
+   <button class="buy" onclick="CollectionAudio()"> Buy </button>
+
+  </div>
 
 </div>
 
 <!--footer copyright centered-->
 <div class="footer">
-
+Copyright &copy; Phantom Media 2023
 </div>
 
 </body>
